@@ -18,7 +18,8 @@ namespace Websitedierentuin1.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        [Route("Kaartjes")]
+        public IActionResult Kaartjes()
         {
             return View();
         }
