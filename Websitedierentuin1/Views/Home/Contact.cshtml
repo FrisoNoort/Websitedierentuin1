@@ -5,7 +5,9 @@
 <h1>@ViewData["Title"]</h1>
 
 <form>
-    Voornaam: <input type= "text" name="firstname" />
-    Achternaam: <input type= "text" name="lastname" />
+    Voornaam: <input type= "text" name="voornaam" />
+    Achternaam: <input type= "text" name="achternaam" />
     <input type="submit" value="opslaan" />
 </form>
+
+<p>Hallo @ViewData["voornaam"] die achternaam @ViewData["achternaam"] heeft</p>
