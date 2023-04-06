@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Websitedierentuin1.Database;
 using System.Diagnostics;
 using Websitedierentuin1.Models;
+using MySql.Data;
 
 namespace Websitedierentuin1.Controllers
 {
@@ -15,7 +17,20 @@ namespace Websitedierentuin1.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            // alle producten ophalen
+            var rows = DatabaseConnector.GetRows("select * from dier");
+
+            // lijst maken om alle namen in te stoppen
+            List<string> names = new List<string>();
+
+            foreach (var row in rows)
+            {
+                // elke naam toevoegen aan de lijst met namen
+                names.Add(row["naam"].ToString());
+            }
+
+            // de lijst met namen in de html stoppen
+            return View(names);
         }
 
         [Route("Kaartjes")]
