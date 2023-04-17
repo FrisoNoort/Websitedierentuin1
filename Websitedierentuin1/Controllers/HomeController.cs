@@ -40,12 +40,17 @@ namespace Websitedierentuin1.Controllers
         }
 
         [Route("Contact")]
-        public IActionResult Contact(string voornaam, string achternaam)
+        public IActionResult Contact()
         {
-            ViewData["voornaam"] = voornaam;
-            ViewData["achternaam"] = achternaam;
-
             return View();
+        }
+
+
+        [HttpPost]
+        [Route("Contact")]
+        public IActionResult Contact(Person person)
+        {
+            return View(person);
         }
 
 

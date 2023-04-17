@@ -4,10 +4,17 @@
 
 <h1>@ViewData["Title"]</h1>
 
-<form>
-    Voornaam: <input type= "text" name="voornaam" />
-    Achternaam: <input type= "text" name="achternaam" />
-    <input type="submit" value="opslaan" />
+<form method ="post">
+    <div> Voornaam: <input type="text" name="voornaam" /> </div>
+    <div> Achternaam: <input type="text" name="achternaam" /> </div>
+    <div> E-mail: <input type="text" name="email" /> </div>
+    <div> Telefoonnummer: <input type="text" name="telefoonnummer" /> </div>
+    <div> Adres: <input type="text" name="adres" /> </div>
+    <div> Beschrijving: <input type="text" name="beschrijving" /> </div>
+    <input type="submit" value="verstuur" />
 </form>
 
-<p>Hallo @ViewData["voornaam"] die achternaam @ViewData["achternaam"] heeft</p>
+@if (Model!= null)
+{
+    <p> Hallo @Model.voornaam die achternaam @Model.achternaam heeft </p>
+}
