@@ -50,9 +50,13 @@ namespace Websitedierentuin1.Controllers
         [Route("Contact")]
         public IActionResult Contact(Person person)
         {
+            // check of alles goed is ingevuld.
+            if (ModelState.IsValid)
+                return Redirect("/succes");
+            
+            //niet goed, dan worden de gegevens doorgestuurd naar die view zodat we de fouten kunnen tonen
             return View(person);
-        }
-
+        }   
 
         public IActionResult Productdetails()
         {
