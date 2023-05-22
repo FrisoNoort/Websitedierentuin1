@@ -14,9 +14,9 @@ namespace Websitedierentuin1.Database
             // maak een lege lijst waar we de namen in gaan opslaan
             List<Dictionary<string, object>> rows = new List<Dictionary<string, object>>();
 
-
+           //************************************** BELANGRIJK!! NIET WEGHALEN *************************************************
             // verbinding maken met de database
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            /*using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 // verbinding openen
                 conn.Open();
@@ -43,7 +43,7 @@ namespace Websitedierentuin1.Database
                         rows.Add(row);
                     }
                 }
-            }
+            }*/
 
             // return de lijst met namen
             return rows;

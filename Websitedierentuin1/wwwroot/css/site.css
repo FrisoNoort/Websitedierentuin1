@@ -14,7 +14,8 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    background-color: #7A9E7E;
+    margin-bottom: 60px;
 }
 
 p {
@@ -29,4 +30,9 @@ p {
 .contactform .field-validation-error {
     color: red;
     margin-left: 10px;
+}
+
+header {
+    font-family: 'Inter', sans-serif;
+    Background: #e8f1f2
 }
