@@ -36,3 +36,8 @@ header {
     font-family: 'Inter', sans-serif;
     Background: #e8f1f2
 }
+
+img {
+    width: 10px;
+    height: 10px;
+}
