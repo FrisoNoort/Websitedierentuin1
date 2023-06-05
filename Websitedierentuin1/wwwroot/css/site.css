@@ -34,13 +34,13 @@ p {
 
 
 
-img {
+.headerfoto{
     width: 70px;
     height: 70px;
 }
 
 
-header {
+header{
     Background: #e8f1f2
 }
 
@@ -69,3 +69,7 @@ li:hover a {
     border-radius: 5px;
 }
 
+.olifantfoto {
+    width: 70%;
+    height: 300px;
+}
