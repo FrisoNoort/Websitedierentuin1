@@ -32,12 +32,40 @@ p {
     margin-left: 10px;
 }
 
+
+
+img {
+    width: 70px;
+    height: 70px;
+}
+
+
 header {
-    font-family: 'Inter', sans-serif;
     Background: #e8f1f2
 }
 
-img {
-    width: 10px;
-    height: 10px;
+nav ul {
+    margin-left:  25%;
+    margin-right: auto;
 }
+
+nav li {
+    display: inline-block;
+    height: 100%;
+    width: 10%;
+    margin-left: 50px;
+    text-align: center;
+}
+
+    nav li a {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+li:hover a {
+    fill: #e8f1f2;
+    background: #e1e1e1;
+    border-radius: 5px;
+}
+
