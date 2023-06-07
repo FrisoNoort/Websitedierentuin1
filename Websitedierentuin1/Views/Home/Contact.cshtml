@@ -1,37 +1,62 @@
 ﻿<link rel="stylesheet" href="~/css/contact.css" asp-append-version="true" />
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Rowdies:wght@300&display=swap" rel="stylesheet">
+
 @model Websitedierentuin1.Models.Person
 
+<body>
 
-@{
-    ViewData["Title"] = "Contact";
-}
-<h1>@ViewData["Title"]</h1>
+    <div class="container">
+        @{
+        ViewData["Title"] = "Neem Contact Op";
+        }
+        <h1>@ViewData["Title"]</h1>
+        <p>Voel je vrij om contact met ons op te nemen om uw ervaring te delen of vragen te stellen!</p>
+        <div class= "contact-box">
+            <div class="contact-left">
+                <h3>Stel Een Vraag</h3>
 
-<form method="post" class="contactform">
-  <div class="form-group">
-    @Html.LabelFor(m => m.voornaam)
-    @Html.TextBoxFor(m => m.voornaam)
-    @Html.ValidationMessageFor(m => m.voornaam)
-  </div>
+                <form method="post" class="contactform">
+                   <div class="input-row">
+                    <div class="input-group">
+                        @Html.LabelFor(m => m.voornaam)
+                        @Html.TextBoxFor(m => m.voornaam) 
+                        @Html.ValidationMessageFor(m => m.voornaam)
+                        
+                    </div>
 
-  <div class="form-group">
-    @Html.LabelFor(m => m.achternaam)
-    @Html.TextBoxFor(m => m.achternaam)
-    @Html.ValidationMessageFor(m => m.achternaam)
-  </div>
+                    <div class="input-group">
+                        @Html.LabelFor(m => m.achternaam)
+                        @Html.TextBoxFor(m => m.achternaam)
+                        @Html.ValidationMessageFor(m => m.achternaam)
+                    </div>
+                   </div>
+                   <div class="input-row">
+                    <div class="input-group">
+                        @Html.LabelFor(m => m.email)
+                        @Html.TextBoxFor(m => m.email)
+                        @Html.ValidationMessageFor(m => m.email)
+                    </div>
 
-  <div class="form-group">
-    @Html.LabelFor(m => m.email)
-    @Html.TextBoxFor(m => m.email)
-    @Html.ValidationMessageFor(m => m.email)
-  </div>
+                    <div class="input-group">
+                        @Html.LabelFor(m => m.onderwerp)
+                        @Html.TextBoxFor(m => m.onderwerp)
+                        @Html.ValidationMessageFor(m => m.onderwerp)
+                    </div>
+                   </div>
 
-  <div class="form-group">
-    @Html.LabelFor(m => m.beschrijving)
-    @Html.TextBoxFor(m => m.beschrijving)
-    @Html.ValidationMessageFor(m => m.beschrijving)
-  </div>
+                   <label>Bericht</label>
+                   <textarea rows="5" placeholder="Uw Bericht..."></textarea>
+                    <input type="submit" value="verstuur" />
+                </form>
+            </div>
+            <div class="contact-right">
+                <h3>Waar Kunt U Ons Bereiken?</h3>
 
-  <input type="submit" value="verstuur" />
-</form>
+            </div>
+        </div>
+    </div>
+
+</body>

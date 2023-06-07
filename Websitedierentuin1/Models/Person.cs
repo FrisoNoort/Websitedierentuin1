@@ -21,7 +21,7 @@ namespace Websitedierentuin1.Models
         public string adres { get; set; }
 
         [Required(ErrorMessage = "Bericht is verplicht")]
-        [Display(Name = "Bericht")]
-        public string beschrijving { get; set; }
+        [Display(Name = "Onderwerp")]
+        public string onderwerp { get; set; }
     }
 }
