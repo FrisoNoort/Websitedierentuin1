@@ -14,6 +14,7 @@ namespace Websitedierentuin1.Models
 
         [Required(ErrorMessage = "Emailadres is verplicht")]
         [EmailAddress(ErrorMessage = "Geen geldig email adres")]
+        [Display(Name = "Email")]
         public string email { get; set; }
 
         public string telefoonnummer { get; set; }

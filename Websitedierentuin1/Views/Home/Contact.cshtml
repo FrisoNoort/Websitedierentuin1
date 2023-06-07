@@ -13,7 +13,7 @@
         ViewData["Title"] = "Neem Contact Op";
         }
         <h1>@ViewData["Title"]</h1>
-        <p>Voel je vrij om contact met ons op te nemen om uw ervaring te delen of vragen te stellen!</p>
+        <p>Voel je vrij om contact met ons op te nemen <br>Om uw ervaring te delen of vragen te stellen!</p>
         <div class= "contact-box">
             <div class="contact-left">
                 <h3>Stel Een Vraag</h3>
@@ -49,11 +49,29 @@
 
                    <label>Bericht</label>
                    <textarea rows="5" placeholder="Uw Bericht..."></textarea>
-                    <input type="submit" value="verstuur" />
+
+                    <button type="submit">Verstuur</button>
+
                 </form>
             </div>
             <div class="contact-right">
-                <h3>Waar Kunt U Ons Bereiken?</h3>
+                <h3>Onze Gegevens</h3>
+
+
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>DierentuinMonki@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Telefoonnummer</td>
+                        <td>+31 6 42 06 96 69</td>
+                    </tr>
+                    <tr>
+                        <td>Adres</td>
+                        <td>Poelplaskade 251, Friesland</td>
+                    </tr>
+                </table>
 
             </div>
         </div>
