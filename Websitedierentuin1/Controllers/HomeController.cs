@@ -58,7 +58,7 @@ namespace Websitedierentuin1.Controllers
             return View(person);
         }   
 
-        public IActionResult Productdetails()
+        public IActionResult Dieren()
         {
             return View();
         }

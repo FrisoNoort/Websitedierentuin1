@@ -21,6 +21,18 @@ p {
     color: #000000
 }
 
+
+.contactform label {
+    width: 100px;
+}
+
+.contactform .field-validation-error {
+    color: red;
+    margin-left: 10px;
+}
+
+
+
 .headerfoto{
     width: 70px;
     height: 70px;
@@ -54,15 +66,4 @@ li:hover a {
     fill: #e8f1f2;
     background: #e1e1e1;
     border-radius: 5px;
-}
-
-.olifantfoto {
-    margin-top: 7%;
-    width: 70%;
-    height: 40%;
-}
-
-.text-center {
-    margin-top: 50px;
-    font-family: 'Rowdies', cursive;
 }
