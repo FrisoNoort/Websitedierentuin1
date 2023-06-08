@@ -25,13 +25,13 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-    let user = getCookie("username");
+    let user = getCookie("naam");
     if (user != "") {
-        alert("Welcome again " + user);
+        alert("Nog eens welkom " + user);
     } else {
-        user = prompt("Please enter your name:", "");
+        user = prompt("Uw Naam:", "");
         if (user != "" && user != null) {
-            setCookie("username", user, 365);
+            setCookie("naam", user, 365);
         }
     }
 }
