@@ -1,7 +1,30 @@
 ﻿<link rel="stylesheet" href="~/css/dieren.css" asp-append-version="true" />
 
-@{
-    ViewData["Title"] = "Dieren";
-}
 
-<h1>@ViewData["Title"]</h1>
+<div class="container">
+
+    @{
+     ViewData["Title"] = "Onze Dieren";
+    }
+
+    <h1>@ViewData["Title"]</h1>
+    <p>Bekijk hier het assortiment van al onze prachtige dieren!</p>
+
+
+    <div class="container-dier">
+        <h2>Gorilla</h2>
+        <img src="Images/bokito.jpg" alt="Bokito"/>
+
+        <a asp-area="" asp-controller="Home" asp-action="Gorilla">
+       
+        <u>Klik hier voor meer informatie</u>
+        </a>
+
+    </div>
+
+    <div class="container-dier">
+        <h2>Gorilla</h2>
+        <img src="Images/bokito.jpg" alt="Bokito" />
+        <u>Klik hier voor meer informatie</u>
+    </div>
+</div>

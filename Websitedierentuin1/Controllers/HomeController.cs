@@ -56,9 +56,16 @@ namespace Websitedierentuin1.Controllers
             
             //niet goed, dan worden de gegevens doorgestuurd naar die view zodat we de fouten kunnen tonen
             return View(person);
-        }   
+        }
 
+        [Route("Dieren")]
         public IActionResult Dieren()
+        {
+            return View();
+        }
+
+        [Route("Gorilla")]
+        public IActionResult Gorilla()
         {
             return View();
         }
