@@ -1,5 +1,8 @@
 ﻿<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 
+
+<body onload="checkCookie()">
+
 @model List<string>
 @{
     ViewData["Title"] = "Home Page";
@@ -10,9 +13,7 @@
     <p> Het leukste uitje voor het hele gezin!</p>
 </div>
 
-<div class= "olifantfoto">
-<img src="Images/Olifant.jpg" alt="Olifant">
-</div>
-
-
-<body onload="checkCookie()"></body>
+    <div class= "olifantfoto">
+    <img src="Images/Olifant.jpg" alt="Olifant">
+    </div>
+</body>
