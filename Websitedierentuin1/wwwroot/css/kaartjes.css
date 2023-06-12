@@ -15,6 +15,7 @@ html {
 
 body {
     background-color: #7A9E7E;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 p {
@@ -32,7 +33,7 @@ header{
 }
 
 nav ul {
-    margin-left:  25%;
+    margin-left:  30%;
     margin-right: auto;
 }
 
@@ -116,12 +117,8 @@ input:checked + .slider:before {
         border-radius: 50%;
     }
 
-.container {
- 
-}
-
 .container-kaartje {
-    margin-top: 100px;
+    margin-top: 60px;
     margin-left: 50px;
     float: left;
     width: 350px;
@@ -134,5 +131,43 @@ input:checked + .slider:before {
 .text-kaartje {
     margin-top: 30px;
     text-align: center;
+    font-size:20px;
 }
 
+.display-4{
+    margin-left: 5%;
+    margin-top: 50px;
+    font-size: 55px;
+}
+
+.titel-text{
+    margin-left: 5%;
+    font-size: 24px;
+}
+
+button {
+    background: #31493C;
+    width: 250px;
+    border: none;
+    outline: none;
+    color: #E8F1F2;
+    height: 40px;
+    border-radius: 30px;
+    margin-left: 15%;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+    margin-top: 50px;
+}
+
+.container-kaartje img{
+    display:block;
+    height: 150px;
+    width: 140px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 20px;
+}
+
+img.olifantlogo{
+    width: 165px;
+    height: 150px;
+}
