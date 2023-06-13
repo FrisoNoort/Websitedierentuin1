@@ -15,11 +15,22 @@ html {
 
 body {
     background-color: #7A9E7E;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.0625rem;
+    line-height: 24px;
+    line-height: 1.5rem;
 }
 
 h1 {
     color: #001A23;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 17px;
 }
 
 
@@ -151,4 +162,52 @@ input:checked + .slider:before {
 
     .slider.round:before {
         border-radius: 50%;
+    }
+
+.dieren-paspoort{
+    width: 70%;
+    background: #e8f1f2;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:30px 100px 30px 100px;
+
+}
+
+dl {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.content .dieren-paspoort dl {
+    color: #7A9E7E;
+    clear: left;
+    border-bottom: 1px solid #7A9E7E;
+    overflow: auto;
+}
+
+    .content .dieren-paspoort dl dt {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight:bold;
+        font-size: 17px;
+        font-size: 1.0625rem;
+        line-height: 24px;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+        clear: left;
+    }
+
+    .content .dieren-paspoort dl dt, .content .dieren-paspoort dl dd {
+        border-top: 1px solid #7A9E7E;
+        width: 50%;
+        float: left;
+        margin: 0;
+        padding-top: 8px;
+        padding-top: 0.5rem;
+        padding-bottom: 8px;
+        padding-bottom: 0.5rem;
     }
