@@ -15,11 +15,35 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #7A9E7E;
+    background-color: var(--primary-color);
 }
 
+
+#icon {
+    width: 30px;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+:root {
+    --primary-color: #7A9E7E;
+    --text-color: #000100;
+    --header-color: #e8f1f2;
+    --header-hover-color: #e1e1e1;
+    --contactbox-color: #e8f1f2
+}
+
+.dark-mode {
+    --primary-color: #023020;
+    --text-color: #e8f1f2;
+    --header-color: #808080;
+    --header-hover-color: white;
+    --contactbox-color: #e8f1f2;
+}
+
+
 p {
-    color: #000000;
+    color: var(--text-color);
 }
 
 
@@ -40,8 +64,8 @@ p {
 }
 
 
-header{
-    Background: #e8f1f2
+header {
+    Background: var(--header-color)
 }
 
 nav ul {
@@ -64,8 +88,8 @@ nav li {
     }
 
 li:hover a {
-    fill: #e8f1f2;
-    background: #e1e1e1;
+    fill: var(--text-color);
+    background: var(--header-hover-color);
     border-radius: 5px;
 }
 
@@ -76,7 +100,7 @@ li:hover a {
 }
 
 .contact-box {
-    background: #E8F1F2;
+    background: var(--contactbox-color);
     display: flex
 }
 
@@ -94,6 +118,7 @@ li:hover a {
 
 h1 {
     margin-bottom: 10px;
+    color: var(--text-color);
 }
 
 .container p{
@@ -111,14 +136,14 @@ h1 {
         display: flex;
     }
 
-input{
+input {
     margin-left: 10px;
-    width:100%;
-    border:none;
-    border-bottom:1px solid #ccc;
-    outline:none;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
     padding-bottom: 5px;
-    background: #E8F1F2;
+    background: #e8f1f2;
 }
 
 textarea {
@@ -127,7 +152,7 @@ textarea {
     outline: none;
     padding: 10px;
     box-sizing: border-box;
-    background: #E8F1F2
+    background: #e8f1f2;
 }
 label{
     margin-bottom: 6px;
@@ -160,6 +185,7 @@ button {
 .contact-right{
   color: #E8F1F2;
 }
+
 tr td:first-child{
     padding-right: 20px;
 

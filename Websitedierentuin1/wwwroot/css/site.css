@@ -13,12 +13,26 @@ html {
   min-height: 100%;
 }
 
+:root {
+    --primary-color: #7A9E7E;
+    --text-color: #000100;
+    --header-color: #e8f1f2;
+    --header-hover-color: #e1e1e1;
+}
+
+.dark-mode {
+    --primary-color: #023020;
+    --text-color: #e8f1f2;
+    --header-color: #808080;
+    --header-hover-color: white;
+}
+
 body {
-    background-color: #7A9E7E;
+    background: var(--primary-color);
 }
 
 p {
-    color: #000000
+    color: var(--text-color);
 }
 
 .headerfoto{
@@ -28,7 +42,7 @@ p {
 
 
 header{
-    Background: #e8f1f2
+    Background: var(--header-color);
 }
 
 nav ul {
@@ -48,71 +62,17 @@ nav li {
         font-family: 'Inter', sans-serif;
         font-size: 16px;
         text-decoration: none;
+        border-radius: 5px;
     }
+
+a.nav-link {
+    color: var(--text-color);
+}
 
 li:hover a {
-    fill: #e8f1f2;
-    background: #e1e1e1;
-    border-radius: 5px;
-}
-
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-    .slider:before {
-        position: absolute;
-        content: "";
-        height: 26px;
-        width: 26px;
-        left: 4px;
-        bottom: 4px;
-        background-color: white;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
-
-input:checked + .slider {
-    background-color: #7A9E7E;
-}
-
-input:focus + .slider {
-    box-shadow: 0 0 1px #7A9E7E;
-}
-
-input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-}
-
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-        border-radius: 50%;
+    fill: var(--text-color);
+    background: var(--header-hover-color);
+    
 }
 
 .olifantfoto {
@@ -123,6 +83,13 @@ input:checked + .slider:before {
 }
 
 .text-center {
+    color:var(--text-color);
     margin-top: 50px;
     font-family: 'Rowdies', cursive;
+}
+
+#icon{
+    width:30px;
+    cursor:pointer;
+    margin-right: 50px;
 }

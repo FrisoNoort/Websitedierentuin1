@@ -22,7 +22,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow mb-3">
             <div class="container-fluid">
                 <div class="headerfoto">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"> <img src="Images/monkey.png" alt="Girl in a jacket" width="70px" height="70px"> </a>
@@ -34,24 +34,21 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item-small">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item-small">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
                         </li>
                         <li class="nav-item-small">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Kaartjes">Kaartjes</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Kaartjes">Kaartjes</a>
                         </li>
                          <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Dieren">Dieren</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Dieren">Dieren</a>
                         </li>
                     </ul>
                 </div>
-                <!-- knopje -->
-               <label class="switch">
-                  <input type="checkbox">
-                  <span class="slider round"></span>
-                </label>
+                <!-- nachtmodus -->
+               <img src="Images/moon.png" id="icon"/>
             </div>
         </nav>
     </header>
@@ -71,5 +68,23 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
+    <!--   Night Modus script!!!!-->
+    <script>
+
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-mode");
+        if(document.body.classList.contains("dark-mode")){
+            icon.src = "Images/sun.png"
+        }else{
+            icon.src = "Images/moon.png"
+        }
+    }
+
+
+    </script>
+
 </body>
 </html>
